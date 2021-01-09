@@ -9,12 +9,12 @@ then
     ENVS=$(cat "$INPUT_ENV" | xargs | sed 's/ /,/g')
 fi
 
-# if [ "$ENVS" ]
-# then
-#     ENV_FLAG="--set-env-vars $ENVS"
+if [ "$ENVS" ]
+then
+    ENV_FLAG="--set-env-vars $ENVS"
 # else
 #    ENV_FLAG="--clear-env-vars"
-# fi
+fi
 
 gcloud auth activate-service-account --key-file="$HOME"/gcloud.json --project "$INPUT_PROJECT"
 

@@ -6,7 +6,7 @@ echo "$INPUT_SERVICE_KEY" | base64 --decode > "$HOME"/gcloud.json
 
 if [ "$INPUT_ENV" ]
 then
-    ENVS=$(echo "$INPUT_ENV" | base64 --decode | xargs | awk '{printf $0 " "}' | sed 's/ /,/g')
+    ENVS=$(echo "$INPUT_ENV" | base64 --decode | awk '{printf $0 " "}' | sed 's/ /,/g')
     ENV_FLAG="--set-env-vars $ENVS"
 fi
 

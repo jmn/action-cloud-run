@@ -18,10 +18,10 @@ inputs:
     description: 'GCP region'
     required: true
   service key:
-    description: 'GCP service key with storage and run permissions'
+    description: 'GCP service key with storage and run permissions as BASE64'
     required: true
   env:
-    description: 'path to an ENV file'
+    description: 'ENV file as base64'
     required: false
 runs:
   using: 'docker'

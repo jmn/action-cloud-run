@@ -1,5 +1,5 @@
 name: 'Cloud Run'
-description: 'Authenticate with gcloud, push image to GCR and deploy as a new revision to Cloud Run'
+description: 'Authenticate with gcloud and deploy as a new revision to Cloud Run'
 author: 'jmn <norlund@gmail.com>'
 branding:
   icon: 'arrow-up-circle'

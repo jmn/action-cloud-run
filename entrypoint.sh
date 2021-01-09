@@ -22,5 +22,5 @@ gcloud run deploy "$INPUT_SERVICE" \
   --image "$INPUT_IMAGE" \
   --region "$INPUT_REGION" \
   --platform managed \
-  --allow-unauthenticated \
+  --allow-unauthenticated # \
 #  ${ENV_FLAG}

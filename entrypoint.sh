@@ -18,6 +18,10 @@ fi
 
 gcloud auth activate-service-account --key-file="$HOME"/gcloud.json --project "$INPUT_PROJECT"
 
+echo "---- ENV_FLAG----"
+echo "$ENV_FLAG"
+echo "---- END ENV_FLAG ----"
+
 gcloud run deploy "$INPUT_SERVICE" \
   --image "$INPUT_IMAGE" \
   --region "$INPUT_REGION" \

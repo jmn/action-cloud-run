@@ -15,7 +15,7 @@ In your actions workflow, somewhere after the step that builds
     service: [your-service]
     project: [your-project]
     region: [gcp-region]
-    env: [path-to-env-file]
+    env: ${{ secrets.ENV_BASE64 }}
     service key: ${{ secrets.GCLOUD_AUTH }}
 ```
 
@@ -30,5 +30,4 @@ The image must be "pushable" to one of Google's container registries, i.e. it
 should be in the `gcr.io/[project]/[image]` or `eu.gcr.io/[project]/[image]`
 format.
 
-The `env` input is optional. If you don't provide a path to env file the run
-deployment will be triggered with the `--clear-env-vars` flag.
+The `env` input is optional.

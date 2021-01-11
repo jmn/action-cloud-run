@@ -9,7 +9,7 @@ In your actions workflow, somewhere after the step that builds
 
 ```bash
 - name: Deploy service to Cloud Run
-  uses: jmn/action-cloud-run@master
+  uses: jmn/action-cloud-run@2cf11f7b354806593b20dafc96778882bc185abd
   with:
     image: gcr.io/[your-project]/[image]
     service: [your-service]

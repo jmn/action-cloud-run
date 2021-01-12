@@ -23,7 +23,6 @@ Your `GCLOUD_AUTH` secret (or whatever you name it) must be a base64 encoded
 gcloud JSON service key with the following permissions:
 - Service Account User
 - Cloud Run Admin
-- Storage Admin
 - Cloud Run Service Agent
 
 The image must be "pushable" to one of Google's container registries, i.e. it
